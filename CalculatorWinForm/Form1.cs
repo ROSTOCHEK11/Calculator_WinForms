@@ -17,9 +17,15 @@ namespace CalculatorWinForm
         string operation = string.Empty;
         string fstNum, secNum;
         bool enterValue = false;
+        double memoryValue;
+        
+
         public Form1()
         {
             InitializeComponent();
+            btnMC.Enabled = false;
+            btnMR.Enabled = false;
+            btnMCmenu.Enabled = false;
         }
 
         private void BtnNum_Click(object sender, EventArgs e)
@@ -162,6 +168,37 @@ namespace CalculatorWinForm
             }
 
 
+        }
+
+        private void btnMS_Click(object sender, EventArgs e)
+        {
+            memoryValue = Double.Parse(tbResult.Text);
+            btnMR.Enabled = true; 
+            btnMC.Enabled = true;
+            btnMCmenu.Enabled = true;
+        }
+
+        private void btnMR_Click(object sender, EventArgs e)
+        {
+            tbResult.Text = memoryValue.ToString();
+        }
+
+        private void btnMC_Click(object sender, EventArgs e)
+        {
+            memoryValue = 0;
+            btnMR.Enabled = false; 
+            btnMC.Enabled = false;
+            btnMCmenu.Enabled = false;
+        }
+
+        private void btnMplus_Click(object sender, EventArgs e)
+        {
+            memoryValue += Double.Parse(tbResult.Text);
+        }
+
+        private void btnMminus_Click(object sender, EventArgs e)
+        {
+            memoryValue -= Double.Parse(tbResult.Text);
         }
 
         private void BtnMathOperation_Click(object sender, EventArgs e)

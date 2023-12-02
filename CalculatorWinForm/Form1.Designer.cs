@@ -57,13 +57,13 @@
             this.tbResult = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnMCmenu = new System.Windows.Forms.Button();
             this.tbHistory = new System.Windows.Forms.TextBox();
+            this.btnMR = new System.Windows.Forms.Button();
+            this.btnMC = new System.Windows.Forms.Button();
+            this.btnMplus = new System.Windows.Forms.Button();
+            this.btnMS = new System.Windows.Forms.Button();
+            this.btnMminus = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -555,12 +555,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.Controls.Add(this.label7, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label6, 4, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label5, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label4, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label3, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnMminus, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnMS, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnMplus, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnMC, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnMR, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnMCmenu, 5, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 158);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -570,75 +570,21 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(351, 30);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // label7
+            // btnMCmenu
             // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label7.Location = new System.Drawing.Point(293, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 30);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "MC▼";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(235, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 30);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "MS";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(177, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 30);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "M-";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(119, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 30);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "M+";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label3.Location = new System.Drawing.Point(61, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 30);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "MR";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 30);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "MC";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMCmenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMCmenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMCmenu.FlatAppearance.BorderSize = 0;
+            this.btnMCmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMCmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMCmenu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMCmenu.Location = new System.Drawing.Point(292, 2);
+            this.btnMCmenu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMCmenu.Name = "btnMCmenu";
+            this.btnMCmenu.Size = new System.Drawing.Size(57, 26);
+            this.btnMCmenu.TabIndex = 20;
+            this.btnMCmenu.Text = "MC▼";
+            this.btnMCmenu.UseVisualStyleBackColor = false;
             // 
             // tbHistory
             // 
@@ -657,6 +603,91 @@
             this.tbHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbHistory.Click += new System.EventHandler(this.BtnMathOperation_Click);
             // 
+            // btnMR
+            // 
+            this.btnMR.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMR.FlatAppearance.BorderSize = 0;
+            this.btnMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMR.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMR.Location = new System.Drawing.Point(60, 2);
+            this.btnMR.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMR.Name = "btnMR";
+            this.btnMR.Size = new System.Drawing.Size(54, 26);
+            this.btnMR.TabIndex = 21;
+            this.btnMR.Text = "MR";
+            this.btnMR.UseVisualStyleBackColor = false;
+            this.btnMR.Click += new System.EventHandler(this.btnMR_Click);
+            // 
+            // btnMC
+            // 
+            this.btnMC.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMC.FlatAppearance.BorderSize = 0;
+            this.btnMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMC.Location = new System.Drawing.Point(2, 2);
+            this.btnMC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMC.Name = "btnMC";
+            this.btnMC.Size = new System.Drawing.Size(54, 26);
+            this.btnMC.TabIndex = 22;
+            this.btnMC.Text = "MC";
+            this.btnMC.UseVisualStyleBackColor = false;
+            this.btnMC.Click += new System.EventHandler(this.btnMC_Click);
+            // 
+            // btnMplus
+            // 
+            this.btnMplus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMplus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMplus.FlatAppearance.BorderSize = 0;
+            this.btnMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMplus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMplus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMplus.Location = new System.Drawing.Point(118, 2);
+            this.btnMplus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMplus.Name = "btnMplus";
+            this.btnMplus.Size = new System.Drawing.Size(54, 26);
+            this.btnMplus.TabIndex = 23;
+            this.btnMplus.Text = "M+";
+            this.btnMplus.UseVisualStyleBackColor = false;
+            this.btnMplus.Click += new System.EventHandler(this.btnMplus_Click);
+            // 
+            // btnMS
+            // 
+            this.btnMS.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMS.FlatAppearance.BorderSize = 0;
+            this.btnMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMS.Location = new System.Drawing.Point(234, 2);
+            this.btnMS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMS.Name = "btnMS";
+            this.btnMS.Size = new System.Drawing.Size(54, 26);
+            this.btnMS.TabIndex = 24;
+            this.btnMS.Text = "MS";
+            this.btnMS.UseVisualStyleBackColor = false;
+            this.btnMS.Click += new System.EventHandler(this.btnMS_Click);
+            // 
+            // btnMminus
+            // 
+            this.btnMminus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMminus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMminus.FlatAppearance.BorderSize = 0;
+            this.btnMminus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMminus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMminus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMminus.Location = new System.Drawing.Point(176, 2);
+            this.btnMminus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMminus.Name = "btnMminus";
+            this.btnMminus.Size = new System.Drawing.Size(54, 26);
+            this.btnMminus.TabIndex = 25;
+            this.btnMminus.Text = "M-";
+            this.btnMminus.UseVisualStyleBackColor = false;
+            this.btnMminus.Click += new System.EventHandler(this.btnMminus_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -671,7 +702,6 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -707,13 +737,13 @@
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbHistory;
+        private System.Windows.Forms.Button btnMCmenu;
+        private System.Windows.Forms.Button btnMminus;
+        private System.Windows.Forms.Button btnMS;
+        private System.Windows.Forms.Button btnMplus;
+        private System.Windows.Forms.Button btnMC;
+        private System.Windows.Forms.Button btnMR;
     }
 }
 
